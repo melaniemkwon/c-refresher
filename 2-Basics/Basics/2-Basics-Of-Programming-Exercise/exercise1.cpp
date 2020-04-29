@@ -1,5 +1,5 @@
 #include <iostream> //This console output is supposed to show the result of 2+2 equation
-
+using std::cout;
 /*
 In this code we are going to use cout which is a member of the iostream library std namespace.
 We can access the cout in 3 different ways.

@@ -1,2 +1,8 @@
-**/Solution/*
+*
+!*/
+!*.*
+
+.DS_Store
+.vscode/
+**/[Ss][Oo][Ll][Uu][Tt][Ii][Oo][Nn]*/*
 **/*.docx
