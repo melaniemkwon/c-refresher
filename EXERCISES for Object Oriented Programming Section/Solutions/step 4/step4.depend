@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1477680508 source:d:\video kursy en\cpp\exercises\exercises for object oriented programming section\solutions\step 4\book.cpp
+	"book.h"
+
+1477677159 d:\video kursy en\cpp\exercises\exercises for object oriented programming section\solutions\step 4\book.h
+	<iostream>
+
+1477676983 source:d:\video kursy en\cpp\exercises\exercises for object oriented programming section\solutions\step 4\library.cpp
+	"library.h"
+
+1477676974 d:\video kursy en\cpp\exercises\exercises for object oriented programming section\solutions\step 4\library.h
+	"book.h"
+
+1534151332 source:d:\video kursy en\cpp\exercises\exercises for object oriented programming section\solutions\step 4\main.cpp
+	<iostream>
+	"library.h"
+	"book.h"
+
