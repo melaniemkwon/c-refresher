@@ -7,7 +7,7 @@ void subtraction();
 void multiplication();
 void division();
 void exponentiation();
-void chooseOperation(char c);
+void chooseOperation(char);
 
 struct inputs {
     int x, y;

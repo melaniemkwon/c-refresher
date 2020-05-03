@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 
 double minValue(double arr[5]);
