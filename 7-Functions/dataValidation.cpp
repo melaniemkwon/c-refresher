@@ -74,7 +74,6 @@ void menuDecision(int choice)
     switch(choice)
     {
         case 1:
-
             do { cout << "Enter the radius: " << endl; cin >> r; } while(!isValid());
             areaCircle(r);
             break;
