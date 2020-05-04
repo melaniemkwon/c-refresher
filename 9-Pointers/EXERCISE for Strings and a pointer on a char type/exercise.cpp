@@ -40,5 +40,7 @@ int main()
         cout << "Not enough memory " << endl;
     }
 
+    delete [] p; // don't forget, free the memory
+
     return 0;
 }
