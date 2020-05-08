@@ -3,6 +3,7 @@
 !*.*
 
 .DS_Store
-.vscode/
+.vscode/*
+!.vscode/tasks.json
 **/[Ss][Oo][Ll][Uu][Tt][Ii][Oo][Nn]*/*
 **/*.docx
