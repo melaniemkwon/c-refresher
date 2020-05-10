@@ -2,6 +2,7 @@
 #include <iostream>
 
 using namespace std;
+
 void PersonalData::setAge(int age)
 {
     if (age < 0)
@@ -9,6 +10,7 @@ void PersonalData::setAge(int age)
     else
         this->age = age;
 }
+
 PersonalData::PersonalData()
 {
     static int i = 0;
@@ -17,15 +19,15 @@ PersonalData::PersonalData()
 
     p = new int[5];
 }
+
 PersonalData::PersonalData(short age)
 {
     cout <<"this is diff cons" << endl;
     this->age = age;
 }
+
 PersonalData::~PersonalData()
 {
     static int j = 0;
     cout << "Destructor has been just invoked " << ++j << endl;
-
-    delete [] p;
 }
