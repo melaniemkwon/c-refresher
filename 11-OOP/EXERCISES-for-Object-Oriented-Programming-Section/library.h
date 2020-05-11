@@ -1,6 +1,7 @@
 #ifndef LIBRARY_H_INCLUDED
 #define LIBRARY_H_INCLUDED
 
+#include <iostream>
 #include "book.h"
 
 class Library
@@ -15,7 +16,7 @@ class Library
 
         void addBook(Book);
         Book getBook(int);
-        // void showBooks();
+        void showBooks();
 };
 
 #endif

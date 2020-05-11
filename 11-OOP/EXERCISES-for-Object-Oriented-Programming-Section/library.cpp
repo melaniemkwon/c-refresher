@@ -28,3 +28,13 @@ Book Library::getBook(int i)
     else
         return this->books[0]; //if out of bounds
 }
+
+void Library::showBooks()
+{
+    for (int i = 0; i < countBooks; i++)
+    {
+        std::cout << i << ") " << this->books[i].getTitle() << " | ";
+        std::cout << this->books[i].getAuthor() << " | ";
+        std::cout << this->books[i].getPublicationYear() << std::endl;
+    }
+}
