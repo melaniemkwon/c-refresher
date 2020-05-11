@@ -13,6 +13,10 @@ class Book
         Book(std::string, std::string, int);
         Book();
         ~Book();
+
+        std::string getTitle() const;
+        std::string getAuthor() const;
+        int getPublicationYear() const;
 };
 
 #endif
