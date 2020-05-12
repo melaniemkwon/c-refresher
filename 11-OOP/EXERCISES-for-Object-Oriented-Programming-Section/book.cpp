@@ -1,9 +1,12 @@
 #include "book.h"
 
+int Book::numberOfBooks = 0;
+
 Book::Book(std::string title, std::string author, int pubYear) {
     this->title = title;
     this->author = author;
     this->pubYear = pubYear;
+    this->bookId = Book::numberOfBooks++;
 }
 
 Book::Book() {
@@ -26,4 +29,8 @@ std::string Book::getAuthor() const
 int Book::getPublicationYear() const
 {
     return this->pubYear;
+}
+int Book::getBookId() const
+{
+    return this->bookId;
 }
