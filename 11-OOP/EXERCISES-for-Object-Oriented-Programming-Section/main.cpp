@@ -6,9 +6,9 @@ using namespace std;
 
 int main()
 {
-    Book book1("Anne of Purple Grables", "L.M. Montgoverness", 1908);
-    Book book2("Poor Expectations", "Charles Chickens", 1679);
-    Book book3("Doon", "Francis Herb", 1966);
+    const Book book1("Anne of Purple Grables", "L.M. Montgoverness", 1908);
+    const Book book2("Poor Expectations", "Charles Chickens", 1679);
+    const Book book3("Doon", "Francis Herb", 1966);
 
     Library library(5);
     library.addBook(book1);
