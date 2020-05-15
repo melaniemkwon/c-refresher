@@ -12,6 +12,7 @@ class Book
         int bookId;
     public:
         Book(std::string, std::string, int);
+        Book(const Book &);
         Book();
         ~Book();
 
