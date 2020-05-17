@@ -3,6 +3,7 @@
 
 #include <string>
 #include "book.h"
+#include "library.h"
 
 class User
 {
@@ -21,17 +22,28 @@ class User
 class Borrower : public User
 {
     protected:
+        friend class Librarian;
         Book* books;
         int maxBooks;
         int countBooks;
     public:
         Borrower(std::string, std::string, int);
-        Borrower();
+        Borrower(const Borrower&) = delete;
+        Borrower& operator=(const Borrower&) = delete;
         ~Borrower();
 
         void addBook(Book);
-        void returnBook(int); //return by unique id
+        Book& getBook(int id);
+        void returnBook(Library&, int);
         void showBooks();
 };
+
+class Librarian: public Borrower
+{
+    public:
+        Librarian(std::string, std::string, int);
+        // void lendBook(Library&, Borrower&, int);
+};
+
 
 #endif // __USER_H__

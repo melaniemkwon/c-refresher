@@ -12,16 +12,16 @@ Library::~Library()
     delete[] books;
 }
 
-void Library::addBook(Book b)
+void Library::addBook(const Book& book)
 {
     if(countBooks < maxBooks)
     {
-        this->books[countBooks] = b;
+        this->books[countBooks] = book;
         this->countBooks++;
     }
 }
 
-Book Library::getBook(int i)
+Book& Library::getBook(int i)
 {
     if (i < maxBooks)
         return this->books[i];

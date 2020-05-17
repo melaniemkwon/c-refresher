@@ -31,11 +31,6 @@ Borrower::~Borrower()
     delete[] books;
 }
 
-Borrower::Borrower()
-{
-
-}
-
 void Borrower::addBook(Book b)
 {
     if(countBooks < maxBooks)
@@ -45,9 +40,20 @@ void Borrower::addBook(Book b)
     }
 }
 
-void Borrower::returnBook(int)
+Book& Borrower::getBook(int id)
 {
+    return this->books[id];
+}
 
+void Borrower::returnBook(Library& library, int position)
+{
+    library.addBook(books[position]);
+    for(int i = 0; i < maxBooks-1; i++)
+    {
+        if (i >= position)
+            books[i] = books[i+1];
+    }
+    this->countBooks--;
 }
 
 void Borrower::showBooks()
@@ -60,3 +66,21 @@ void Borrower::showBooks()
         cout << this->books[i].getPublicationYear() << endl;
     }
 }
+
+Librarian::Librarian(std::string name, std::string lastName, int maxBooks)
+: Borrower(name, lastName, maxBooks)
+{}
+
+// void Librarian::lendBook(Library& library, Borrower& borrower, int position)
+// {
+//     borrower.books[borrower.countBooks] = library.books[position];
+
+//     for(int i = 0; i < library.maxBooks-1; i++)
+//     {
+//         if (i >= position)
+//             library.books[i] = library.books[i+1];
+//     }
+
+//     library.countBooks--;
+//     borrower.countBooks++;
+// }

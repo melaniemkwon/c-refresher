@@ -3,10 +3,11 @@
 
 #include <iostream>
 #include "book.h"
+// #include "user.h"
 
 class Library
 {
-    private:
+    protected:
         Book* books;
         int maxBooks;
         int countBooks;
@@ -14,9 +15,11 @@ class Library
         Library(int);
         ~Library();
 
-        void addBook(Book);
-        Book getBook(int);
+        void addBook(const Book&);
+        Book& getBook(int);
         void showBooks();
+
+        // friend void Librarian::lendBook(Library&, Borrower&, int);
 };
 
 #endif
