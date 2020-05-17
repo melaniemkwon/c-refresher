@@ -10,10 +10,10 @@ Book::Book(std::string title, std::string author, int pubYear) {
 }
 
 Book::Book(const Book &obj) {
+    this->bookId = obj.getBookId();
     this->title = obj.getTitle();
     this->author = obj.getAuthor();
     this->pubYear = obj.getPublicationYear();
-    this->bookId = Book::numberOfBooks++;
 }
 
 Book::Book()
