@@ -3,7 +3,8 @@
 
 #include <string>
 #include "book.h"
-#include "library.h"
+
+class Library;
 
 class User
 {
@@ -42,7 +43,7 @@ class Librarian: public Borrower
 {
     public:
         Librarian(std::string, std::string, int);
-        // void lendBook(Library&, Borrower&, int);
+        void lendBook(Library&, Borrower&, int);
 };
 
 

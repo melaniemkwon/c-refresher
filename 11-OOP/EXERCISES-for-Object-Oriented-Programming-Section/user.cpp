@@ -1,5 +1,6 @@
 #include <iostream>
 #include "user.h"
+#include "library.h"
 
 using namespace std;
 
@@ -71,16 +72,16 @@ Librarian::Librarian(std::string name, std::string lastName, int maxBooks)
 : Borrower(name, lastName, maxBooks)
 {}
 
-// void Librarian::lendBook(Library& library, Borrower& borrower, int position)
-// {
-//     borrower.books[borrower.countBooks] = library.books[position];
+void Librarian::lendBook(Library& library, Borrower& borrower, int position)
+{
+    borrower.books[borrower.countBooks] = library.books[position];
 
-//     for(int i = 0; i < library.maxBooks-1; i++)
-//     {
-//         if (i >= position)
-//             library.books[i] = library.books[i+1];
-//     }
+    for(int i = 0; i < library.maxBooks-1; i++)
+    {
+        if (i >= position)
+            library.books[i] = library.books[i+1];
+    }
 
-//     library.countBooks--;
-//     borrower.countBooks++;
-// }
+    library.countBooks--;
+    borrower.countBooks++;
+}

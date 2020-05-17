@@ -41,7 +41,8 @@ int main()
     const Book borrower_book = borrower1.getBook(1);
     cout << borrower_book.getTitle() << endl;
 
-    //return the book to library
+
+    cout << "##### Return book to library " << endl;
     borrower1.returnBook(library, 1);
 
     cout << borrower1.getName() + " " + borrower1.getLastName() << " books:" << endl;
@@ -49,6 +50,17 @@ int main()
 
     cout << "Show books library: " << endl;
     library.showBooks();
+
+    cout << "##### Lend a book back to borrower " << endl;
+    Librarian librarian1("Patty", "Ketchup", 12);
+    librarian1.lendBook(library, borrower1, 6);
+
+    cout << borrower1.getName() + " " + borrower1.getLastName() << " books:" << endl;
+    borrower1.showBooks();
+
+    cout << "Show books library: " << endl;
+    library.showBooks();
+
     return 0;
 }
 

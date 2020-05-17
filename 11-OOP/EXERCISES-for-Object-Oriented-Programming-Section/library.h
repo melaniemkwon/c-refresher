@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "book.h"
-// #include "user.h"
+#include "user.h"
 
 class Library
 {
@@ -19,7 +19,7 @@ class Library
         Book& getBook(int);
         void showBooks();
 
-        // friend void Librarian::lendBook(Library&, Borrower&, int);
+        friend void Librarian::lendBook(Library&, Borrower&, int);
 };
 
 #endif
