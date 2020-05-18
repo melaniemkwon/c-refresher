@@ -9,12 +9,12 @@ Circle::Circle(double radius)
 
 Circle::~Circle()
 {
-
+    std::cout << "Circle destructor !" << std::endl;
 }
 
 void Circle::introduce()
 {
-    cout << "I am a Circle!" << endl;
+    std::cout << "I am a Circle!" << std::endl;
 }
 
 double Circle::calculateArea()

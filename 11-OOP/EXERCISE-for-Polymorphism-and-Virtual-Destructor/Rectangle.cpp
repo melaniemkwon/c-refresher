@@ -10,12 +10,12 @@ Rectangle::Rectangle(double width, double height)
 
 Rectangle::~Rectangle()
 {
-
+    std::cout << "Rectangle destructor !" << std::endl;
 }
 
 void Rectangle::introduce()
 {
-    cout << "I am a Rectangle!" << endl;
+    std::cout << "I am a Rectangle!" << std::endl;
 }
 
 double Rectangle::calculateArea()

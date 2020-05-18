@@ -2,11 +2,11 @@
 #define __SHAPE_H__
 
 #include <iostream>
-using namespace std;
 
 class Shape
 {
     public:
+        ~Shape() { std::cout << "Shape destructor !" << std::endl; };
         virtual void introduce() = 0;
         virtual double calculateArea() = 0;
         virtual double calculateCircumference() = 0;
