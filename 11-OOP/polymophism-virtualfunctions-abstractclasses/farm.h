@@ -9,8 +9,8 @@ class Animal
     protected:
         string voice;
     public:
-        // Animal();
-        // ~Animal();
+        Animal();
+        virtual ~Animal();
 
         // virtual string getVoice() { return voice; };
         virtual string getVoice() = 0; //make class abstract

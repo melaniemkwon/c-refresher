@@ -1,14 +1,14 @@
 #include "farm.h"
 
-// Animal::Animal()
-// {
-//     voice = "default value";
-// }
+Animal::Animal()
+{
+    voice = "default value";
+}
 
-// Animal::~Animal()
-// {
-
-// }
+Animal::~Animal()
+{
+    cout << "base class destructor" << endl;
+}
 
 Dog::Dog()
 {
@@ -18,7 +18,7 @@ Dog::Dog()
 
 Dog::~Dog()
 {
-
+    cout << "sub class destructor. dog" << endl;
 }
 
 Cat::Cat()
@@ -29,7 +29,7 @@ Cat::Cat()
 
 Cat::~Cat()
 {
-
+    cout << "sub class destructor. cat" << endl;
 }
 
 Cow::Cow()
@@ -40,5 +40,5 @@ Cow::Cow()
 
 Cow::~Cow()
 {
-
+    cout << "sub class destructor. cow" << endl;
 }
