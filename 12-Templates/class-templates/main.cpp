@@ -22,7 +22,7 @@ void operationOnPoints()
 {
     Point<int> a(5);
     PointInt b(10);          // with type definition
-    Point<double> c(6.88);
+    Point<double> c(6.88);   // special case for double, getX
 
     cout << a.getX() << endl;
     cout << b.getX() << endl;

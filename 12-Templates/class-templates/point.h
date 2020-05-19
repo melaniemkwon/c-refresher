@@ -12,7 +12,7 @@ class Point
     public:
         Point(T =0);
         ~Point();
-        T getX() { return x; }
+        T getX();
         void setX(T);
 };
 
@@ -32,6 +32,17 @@ void Point<T>::setX(T x)
 {
     this->x = x;
     cout << "Im from Point" << endl;
+}
+template<typename T>
+T Point<T>::getX()
+{
+    return this->x;
+}
+template<>                      //SPECIALIZED
+double Point<double>::getX()    //FUNCTION
+{
+    cout <<"this function will be executed only when Point<double>" << endl;
+    return this->x;
 }
 
 template<typename T>
