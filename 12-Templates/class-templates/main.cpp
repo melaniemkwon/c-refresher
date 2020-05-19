@@ -32,4 +32,6 @@ void operationOnPoints()
     cout << d.getX() << ", " << d.getY() << endl;
 
     Point<char> e(45);      // specific template for a type
+
+    Point<int*> f(33);      // specific template for pointers
 }

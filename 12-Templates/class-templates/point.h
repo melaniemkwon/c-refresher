@@ -45,6 +45,13 @@ double Point<double>::getX()    //FUNCTION
     return this->x;
 }
 
+template<typename K>            //SPECIALIZED
+class Point<K*>                 //FUNCTION
+{
+    public:
+        Point(K) {cout << "ERROR: You can't use pointers as a type for Point." << endl;}
+};
+
 template<typename T>
 class Point2D : public Point<T>
 {
