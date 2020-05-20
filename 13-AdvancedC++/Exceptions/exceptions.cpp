@@ -7,7 +7,7 @@ class DivisionByZeroException
     public:
         void getErrorMessage() { cout << "Error: Do not divide by zero"; }
 };
-double division(double a, double b)
+double division(double a, double b) throw(DivisionByZeroException)
 {
     if (b == 0)
     {
