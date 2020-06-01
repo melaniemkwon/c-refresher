@@ -25,6 +25,19 @@ int main()
     it--;
     cout << *it << endl; // 4
 
+    cout << "#### iterate a vector (while)" << endl;
+    while(it != wholeNumbers.end())  //NOTE: this will start at 4
+    {
+        cout << *it << endl;
+        it++;
+    }
+
+    cout << "#### iterate a vector (for)" << endl;
+    for(vector<int>::iterator it = wholeNumbers.begin(); it != wholeNumbers.end(); it++)
+    {
+        cout << *it << endl;
+    }
+
     return 0;
 }
 
