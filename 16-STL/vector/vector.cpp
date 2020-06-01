@@ -6,12 +6,12 @@ using namespace std;
 int main()
 {
     // b/c vector is template class, you need to specify what type of var
-    vector<int> wholeNumbers;
+    vector<int> wholeNumbers {1, 25, -45, 350};
 
-    wholeNumbers.push_back(1);
-    wholeNumbers.push_back(25);
-    wholeNumbers.push_back(-45);
-    wholeNumbers.push_back(350);
+    // wholeNumbers.push_back(1);
+    // wholeNumbers.push_back(25);
+    // wholeNumbers.push_back(-45);
+    // wholeNumbers.push_back(350);
 
     for (int i = 0; i < wholeNumbers.size(); i++)
     {
