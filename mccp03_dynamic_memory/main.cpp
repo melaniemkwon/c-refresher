@@ -1,3 +1,4 @@
+#include <cstring>
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -31,7 +32,7 @@ void NewArrays() {
 }
 void Strings() {
 	char *p = new char[4];
-	strcpy_s(p, 4, "C++");
+	strcpy(p, "Bro");
 	std::cout << p << std::endl;
 	delete[]p;
 }
@@ -54,8 +55,7 @@ int main() {
 	int data[2][3] = {
 		1,2,3,
 		4,5,6
-	}; //1,2,3,4,5,6
-	   //data[0][1]
+	};
 	Strings();
 
 	return 0;
